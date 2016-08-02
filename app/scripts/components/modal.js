@@ -5,7 +5,7 @@ import { Link, hashHistory } from 'react-router';
 const Modal = React.createClass({
   confirmHandler: function () {
     console.log('You have read this!');
-    store.session.set('userRead', true);
+    store.doc.set('userRead', true);
     hashHistory.push('/');
   },
 
@@ -13,9 +13,9 @@ const Modal = React.createClass({
     return (
     <div className="modal-container">
       <div className="modal-content">
-      Are you sure you want to mark as read?
-      <input onClick={this.confirmHandler} type="button" value="confirm"/>
-      <Link to="/">cancel</Link>
+      <span>Are you sure you want to mark as read?</span>
+      <input className="confirmBtn" onClick={this.confirmHandler} type="button" value="confirm"/>
+      <Link className="cancelBtn" to="/">cancel</Link>
       </div>
     </div>
     )

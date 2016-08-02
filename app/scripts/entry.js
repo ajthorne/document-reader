@@ -3,12 +3,15 @@ import { Router, hashHistory, Route } from 'react-router';
 import ReactDOM from 'react-dom';
 import DocumentReader from './components/document';
 import Modal from './components/modal';
+import store from './store';
+// import Nav from './components/nav';
+// import SingleDoc from './components/documentsingle';
 
 const App = React.createClass({
   render: function () {
+    // console.log(store.docsCollection.get[i].userRead);
     return (
       <div className="main-content">
-      <h2>Your Document</h2>
       <DocumentReader />
       {this.props.children}
       </div>
@@ -25,3 +28,8 @@ const router = (
 )
 
 ReactDOM.render(router, document.querySelector('.container'));
+
+
+// <Nav />
+// <Route path="/:id" component={SingleDoc}/>
+// <Route path="/:id" component={DocumentReader}/>

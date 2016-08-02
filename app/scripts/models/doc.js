@@ -1,9 +1,9 @@
 import Backbone from 'backbone';
 
-const Session = Backbone.Model.extend({
+const Doc = Backbone.Model.extend({
   defaults: {
     userRead: false
   }
 })
 
-export default Session;
+export default Doc;

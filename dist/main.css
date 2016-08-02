@@ -1,5 +1,20 @@
 body {
   font-family: helvetica; }
+  body .main-content h2 {
+    text-align: center; }
+  body .main-view {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    position: relative;
+    border: 3px solid #1DA1F2;
+    border-radius: 5px;
+    padding: 1%; }
+    body .main-view label {
+      text-align: right;
+      margin-top: 1.2rem;
+      position: absolute;
+      right: 0; }
   body .modal-container {
     position: fixed;
     top: 0;
@@ -9,9 +24,32 @@ body {
     background: rgba(0, 0, 0, 0.5); }
   body .modal-content {
     background: white;
-    width: 25%;
+    border: 2px solid #1DA1F2;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    width: 31%;
     margin: 0 auto;
     height: 25vh;
-    margin-top: 25%; }
+    margin-top: 20%;
+    padding: 2%; }
+    body .modal-content span {
+      display: block;
+      margin-bottom: 2rem; }
+  body .confirmBtn {
+    margin-left: 25%;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: #1DA1F2; }
+  body .cancelBtn {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    color: black;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: #1DA1F2; }
 
 /*# sourceMappingURL=main.css.map */
